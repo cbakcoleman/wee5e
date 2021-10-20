@@ -1,0 +1,53 @@
+@model wee5e.Models.User
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <title>Registration</title>
+</head>
+<body>
+    <div class="container"> <!-- BEGIN WHOLE PAGE CONTAINER -->
+        <div class="row"> <!-- BEGIN HEADER ROW -->
+            <div class="col">
+                <h6>wee 5e</h6>
+            </div>
+        </div> <!-- END HEADER ROW -->
+
+        <div class="row"> <!-- BEGIN REGISTRATION FORM ROW -->
+            <form asp-action="" asp-controller="home">
+                <div class="col card m-1 p-3">
+                    <div>
+                        <span asp-validation-for="Name"></span>
+                    </div>
+                    <label asp-for="Name"></label>
+                    <input asp-for="Name" class="form-control">
+
+                    <div>
+                        <span asp-validation-for="Email"></span>
+                    </div>
+                    <label asp-for="Email"></label>
+                    <input asp-for="Email" class="form-control">
+
+                    <div>
+                        <span asp-validation-for="Password"></span>
+                    </div>
+                    <label asp-for="Password"></label>
+                    <input asp-for="Password" class="form-control">
+
+                    <div>
+                        <span asp-validation-for="Confirm"></span>
+                    </div>
+                    <label asp-for="Confirm"></label>
+                    <input asp-for="Confirm" class="form-control">
+                
+                </div>
+            </form>
+        </div> <!-- END REGISTRATION FORM ROW -->
+        
+    </div> <!-- END WHOLE PAGE CONTAINER -->
+</body>
+</html>
