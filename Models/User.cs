@@ -10,7 +10,7 @@ namespace wee5e.Models
         [Key]
         public int UserId {get;set;}
 
-        [Required(ErrorMessage = "You must enter name.")]
+        [Required(ErrorMessage = "You must enter a user name.")]
         [MinLength(2, ErrorMessage = "Name must be at least 2 characters long.")]
         [Display(Name = "User Name: ")]
         public string Name {get;set;}
